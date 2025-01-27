@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+@import "./assets/fonts/inter.css";
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-inter: "InterVariable", sans-serif;
+  --font-display: "JetBrains Mono";
+}
+
+:root {
+  font-display: swap;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.trax-container {
+  @apply flex px-2 py-3 w-full xl:w-[65%] mx-auto;
+}
