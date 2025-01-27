@@ -8,9 +8,9 @@ const settings = useSiteStore();
 <template>
   <div
     :class="settings.darkMode ? 'dark' : ''"
-    class="flex h-screen dark:bg-gray-950 dark:text-gray-100 font-inter transition-colors duration-200"
+    class="flex min-h-screen min-w-screen dark:bg-gray-950 dark:text-gray-100 font-inter transition-colors duration-200"
   >
     <Navbar />
-    <router-view class="w-full"></router-view>
+    <router-view class="h-full w-full"></router-view>
   </div>
 </template>
